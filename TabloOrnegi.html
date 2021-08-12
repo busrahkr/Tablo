@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        function yaz()
+        {
+
+
+         var sat=prompt("SATİR SAYİNİZ",0)
+         var sut=prompt("SUTUN SAYİNİZ",0)
+        document.write("<table border='2' >");
+        for(var x=1;x<=sat;x++)
+
+        {
+
+         for(var i=1;i<=sut;i++)
+         {
+
+          if(i==1)
+
+         document.write("<tr>")
+          var y=i+(x-1)*sut
+            document.write("<td><input value='"+y+"'  type='text' Id='a"+x+"_"+i+ "'/>{0}</td>",i);
+         if (i==sut)
+         document.write("</tr>")
+         }
+
+
+        }
+        document.write("</table>")
+        }
+    </script>
+
+    <!-- head tagları arasında alt programımızı oluşturuyoruz ve body tagları arasında bir buton oluşturuyoruz. Butonun üzerine tıkladığımız zaman döngü çalışacaktır. -->
+
+    <input name="Tikla" type="button" class="yunus" onclick="yaz()" value="TABLO" />
+</body>
+</html>
